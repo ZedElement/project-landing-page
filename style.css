@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 15px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+}
