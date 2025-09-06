@@ -4,53 +4,60 @@ html, body {
 }
 
 .container {
-    max-width: 1100px;     /* عرض أقصى للمحتوى */
-    margin: 0 auto;        /* يوسّطه في النص */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px; /* small padding for mobile */
+}
+
+/* HEADER */
+.top-header-full {
+    background-color: #1F1937;
+    padding: 10px 0;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 h1 {
-    padding-top: 0;    
-    padding-bottom: 0;
-}
-
-ul li {
-    list-style-type: none;
+    color: #F9FAF8;
+    font-size: 24px;
+    margin: 0;
 }
 
 ul {
     display: flex;
     gap: 15px;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul a {
+ul li {
+    list-style-type: none;
+}
+
+ul a {
     color: inherit;
     text-decoration: none;
 }
 
-.header {
-    font-size: 18px;
-    color: #e5e7eb;
-    background-color: #1F1937;
-}
-
-h1 {
-    color: #F9FAF8;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-}
-
+/* INTRO */
 .intro-section {
     background-color: #1F1937;
     color: #e5e7eb;
+    padding: 40px 0;
+}
+
+.intro-inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 h2 {
@@ -65,8 +72,8 @@ h2 {
 }
 
 .intro-right {
-    display: flex;
     width: 500px;
+    max-width: 100%;
 }
 
 button {
@@ -78,6 +85,7 @@ button {
     background-color: #3882F6;
 }
 
+/* PILLARS */
 .h2-main-text {
     font-size: 36px;
     color: #1F1937;
@@ -98,8 +106,6 @@ button {
 .icons-text {
     display: flex;
     gap: 70px;
-    flex-wrap: wrap;
-    width: 800px;
     justify-content: center;
 }
 
@@ -107,6 +113,78 @@ button {
     width: 200px;
 }
 
+.small-title, .description   {
+    text-align: center;
+}
+
 .small-title {
     font-weight: 700;
+}
+
+/* QUOTE */
+.quote-section {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.secondary-text {
+    
+}
+
+.main-text {
+    font-size: 36px;
+    font-style: italic;
+    margin: 0;
+    color: #1F1937;
+    font-weight: 500;
+}
+
+.secondary-text {
+    font-size: 25px;
+    color: #1F1937;
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* GUIDE */
+.guide-section {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.guide-section .container {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px;
+    border-radius: 10px;
+    gap: 100px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.left-side p {
+    text-align: left;
+}
+
+.guide-text-1 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.second-button {
+    background-color: #3882F6;
+    border: solid 2px white;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1F1937;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
